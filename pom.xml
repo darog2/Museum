@@ -9,6 +9,11 @@
     <version>1.0-SNAPSHOT</version>
     <dependencies>
         <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.25</version>
+        </dependency>
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>RELEASE</version>
@@ -20,5 +25,30 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-maven-plugin</artifactId>
+                <version>3.8.9</version>
+                <configuration>
+                    <changeLogFile>src/main/resources/db/changelog/master/db.changelog-master.xml</changeLogFile>
+                    <driver>org.mysql.Driver</driver>
+                    <url>jdbc:mysql://localhost:3306/museum</url>
+                    <username>root</username>
+                    <password>admin</password>
+                    <changelogSchemaName>misc</changelogSchemaName>
+                    <outputChangeLogFile>myGenChangeLog.xml</outputChangeLogFile>
+                </configuration>
+                <!--				<executions>-->
+                <!--					<execution>-->
+                <!--						<phase>process-resources</phase>-->
+                <!--						<goals>-->
+                <!--							<goal>update</goal>-->
+                <!--						</goals>-->
+                <!--					</execution>-->
+                <!--				</executions>-->
+            </plugin>
+        </plugins>
+    </build>
 </project>
