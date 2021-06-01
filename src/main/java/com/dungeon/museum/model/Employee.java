@@ -8,8 +8,7 @@ import java.util.Date;
 @Data
 @SuperBuilder
 public class Employee extends Human {
-    private String lastName;
-    private Date age;
+    private Date dateOfEmployment;
     private String education;
-    private boolean status;
+    private EmployeeStatus status;
 }

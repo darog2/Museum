@@ -11,6 +11,6 @@ public class Lecture extends BaseEntity {
     private String description;
     private Employee lecturer;
     private Date lectureStart;
-    private Date lectureOver;
+    private Date lectureAnd;
 
 }
