@@ -6,12 +6,12 @@
         <sqlFile dbms="mysql"
                  encoding="UTF-8"
                  relativeToChangelogFile="true"
-                 path="sql/00-10-create-humans-table.sql"/>
+                 path="sql/00-20-create-addresses-table.sql"/>
         <rollback>
             <sqlFile dbms="mysql"
                      encoding="UTF-8"
                      relativeToChangelogFile="true"
-                     path="rollback/00-20-drop-address-table.sql"/>
+                     path="rollback/00-10-drop-address-table.sql"/>
         </rollback>
 
     </changeSet>

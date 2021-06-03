@@ -7,7 +7,7 @@ import java.util.Date;
 
 @Data
 @SuperBuilder
-public class Employee extends Human {
+public class   Employee extends Human {
     private Date dateOfEmployment;
     private String education;
     private EmployeeStatus status;

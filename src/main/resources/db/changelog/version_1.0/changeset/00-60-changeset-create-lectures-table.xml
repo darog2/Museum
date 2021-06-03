@@ -6,7 +6,7 @@
         <sqlFile dbms="mysql"
                  encoding="UTF-8"
                  relativeToChangelogFile="true"
-                 path="sql/00-10-create-humans-table.sql"/>
+                 path="sql/00-60-create-lectures-table.sql"/>
         <rollback>
             <sqlFile dbms="mysql"
                      encoding="UTF-8"
