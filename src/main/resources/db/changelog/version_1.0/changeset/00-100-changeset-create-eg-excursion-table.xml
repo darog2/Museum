@@ -6,12 +6,12 @@
         <sqlFile dbms="mysql"
                  encoding="UTF-8"
                  relativeToChangelogFile="true"
-                 path="sql/00-10-create-addresses-table.sql"/>
+                 path="sql/00-100-create-eg-excursion-table.sql"/>
         <rollback>
             <sqlFile dbms="mysql"
                      encoding="UTF-8"
                      relativeToChangelogFile="true"
-                     path="rollback/00-10-drop-address-table.sql"/>
+                     path="rollback/00-100-drop-eg-excursion-table.sql"/>
         </rollback>
 
     </changeSet>

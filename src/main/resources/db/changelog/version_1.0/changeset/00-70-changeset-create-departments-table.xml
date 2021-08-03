@@ -11,7 +11,7 @@
             <sqlFile dbms="mysql"
                      encoding="UTF-8"
                      relativeToChangelogFile="true"
-                     path="rollback/00-70-drop-departments-table.sql"/>
+                     path="rollback/00-80-drop-departments-table.sql"/>
         </rollback>
 
     </changeSet>

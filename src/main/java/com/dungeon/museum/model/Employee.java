@@ -11,4 +11,5 @@ public class   Employee extends Human {
     private Date dateOfEmployment;
     private String education;
     private EmployeeStatus status;
+    private Department department;
 }

@@ -1,0 +1,1 @@
+DROP TABLE excursion_groups;

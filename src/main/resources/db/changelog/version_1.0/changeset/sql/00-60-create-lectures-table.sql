@@ -7,7 +7,10 @@ CREATE TABLE lectures
     lecture_lecturer      BIGINT,
     lecture_start         DATETIME,
     lecture_and           DATETIME,
+    lecture_excursion   BIGINT ,
     lecture_register_date DATETIME default NOW(),
 
-    FOREIGN KEY (lecture_lecturer) REFERENCES employees (employee_id)
+    FOREIGN KEY (lecture_lecturer) REFERENCES employees (employee_id),
+    FOREIGN KEY (lecture_excursion)REFERENCES excursions(excursion_id)
+
 );

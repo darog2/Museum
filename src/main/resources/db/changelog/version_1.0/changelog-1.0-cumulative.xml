@@ -10,4 +10,7 @@
     <include file="changeset/00-50-changeset-create-excursions-table.xml" relativeToChangelogFile="true"/>
     <include file="changeset/00-60-changeset-create-lectures-table.xml" relativeToChangelogFile="true"/>
     <include file="changeset/00-70-changeset-create-departments-table.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/00-80-changeset-add-departments-key-to-employees-table.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/00-90-changeset-create-clients-table.xml" relativeToChangelogFile="true"/>
+    <include file="changeset/00-100-changeset-create-eg-excursion-table.xml" relativeToChangelogFile="true"/>
 </databaseChangeLog>

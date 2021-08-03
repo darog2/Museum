@@ -14,4 +14,5 @@ private List<Lecture> listLecture;
 private Employee guide;
 private Date startExcursion;
 private Date andExcursion;
+
 }
