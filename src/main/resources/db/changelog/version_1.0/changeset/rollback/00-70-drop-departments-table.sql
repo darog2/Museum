@@ -1,1 +1,2 @@
-ALTER TABLE public.employees drop constraint department_fk;
+
+drop table departments;
