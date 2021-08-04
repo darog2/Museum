@@ -1,0 +1,1 @@
+drop function if exists f_get_museum_id_by_name;
