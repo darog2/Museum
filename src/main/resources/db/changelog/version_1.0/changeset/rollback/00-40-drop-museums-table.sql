@@ -1,1 +1,1 @@
-DROP TABLE museums;
+DROP TABLE if exists museums;

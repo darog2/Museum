@@ -1,18 +1,10 @@
-DROP FUNCTION IF EXISTS  f_get_museum_id_by_name;
-DELIMITER $$
-CREATE function
+create or replace function
     f_get_museum_id_by_name(p_name VARCHAR(40))
-    returns INTEGER
-BEGIN
-    DECLARE result integer;
+    returns integer as'
     select museum_id
-
-    into result
-    from museums
+    from public.museums
     where museum_name = p_name
 
     limit 1;
+  'Language sql;
 
-    return result;
-end$$
-DELIMITER ;

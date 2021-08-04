@@ -1,1 +1,1 @@
-DROP TABLE lectures;
+DROP TABLE if exists lectures;

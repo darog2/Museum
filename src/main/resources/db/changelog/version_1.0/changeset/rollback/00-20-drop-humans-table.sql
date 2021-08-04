@@ -1,1 +1,1 @@
-DROP TABLE humans;
+DROP TABLE if exists humans;

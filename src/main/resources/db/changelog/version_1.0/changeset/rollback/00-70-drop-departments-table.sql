@@ -1,0 +1,1 @@
+ALTER TABLE public.employees drop constraint department_fk;

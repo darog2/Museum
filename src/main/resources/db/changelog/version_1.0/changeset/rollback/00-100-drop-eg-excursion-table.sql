@@ -1,1 +1,1 @@
-DROP TABLE excursion_groups;
+DROP TABLE if exists excursion_groups;

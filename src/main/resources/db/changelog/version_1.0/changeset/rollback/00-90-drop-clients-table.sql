@@ -1,1 +1,1 @@
-DROP TABLE clients;
+DROP TABLE if exists clients;

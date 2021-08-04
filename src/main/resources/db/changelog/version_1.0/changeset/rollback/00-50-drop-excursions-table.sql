@@ -1,1 +1,1 @@
-DROP TABLE excursions;
+DROP TABLE if exists excursions;
