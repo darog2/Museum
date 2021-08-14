@@ -10,5 +10,5 @@ CREATE TABLE public.employees
      employee_date_of_employment DATE,
      employee_education VARCHAR(40) NOT NULL ,
      employee_department BIGINT,
- employee_status VARCHAR(20)) ;
+ employee_status employee_status default 'WORKING') ;
 
