@@ -4,7 +4,7 @@ CREATE OR REPLACE FUNCTION
     ,p_date_of_birth DATE)
     RETURNS INTEGER AS'
     select human_id
-    from public.humans
+    from works.humans
     where human_first_name =p_first_name
     and human_date_of_birth=p_date_of_birth
     and human_last_name=p_last_name

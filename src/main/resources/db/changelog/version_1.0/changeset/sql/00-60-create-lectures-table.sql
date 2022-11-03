@@ -10,7 +10,7 @@ CREATE TABLE public .lectures
     lecture_excursion   BIGINT ,
     lecture_register_date timestamp default NOW(),
 
-    FOREIGN KEY (lecture_lecturer) REFERENCES public.employees (employee_id),
-    FOREIGN KEY (lecture_excursion)REFERENCES public.excursions(excursion_id)
+    FOREIGN KEY (lecture_lecturer) REFERENCES works.employees (employee_id),
+    FOREIGN KEY (lecture_excursion)REFERENCES works.excursions(excursion_id)
 
 );

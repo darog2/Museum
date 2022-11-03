@@ -1,1 +1,1 @@
-DROP TABLE if exists museums;
+DROP TABLE if exists museums cascade ;

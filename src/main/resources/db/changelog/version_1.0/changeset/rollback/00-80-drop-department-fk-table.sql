@@ -1,1 +1,1 @@
-ALTER TABLE if exists public.employees drop constraint department_fk;
+ALTER TABLE if exists works.employees drop constraint department_fk;

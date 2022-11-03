@@ -6,10 +6,12 @@ import lombok.experimental.SuperBuilder;
 @Data
 @SuperBuilder
 public class Address {
+    private int id;
     private String country;
     private String region;
     private String city;
     private String str;
     private String house;
-    private String postalCode;
+    //TODO: [CRITICAL] change to string in application and in database
+    private int postalCode;
 }
